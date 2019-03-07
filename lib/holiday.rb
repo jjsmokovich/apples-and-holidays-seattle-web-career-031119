@@ -33,7 +33,8 @@ def all_holidays_with_bbq(holiday_hash)
     data.each do |holiday, supply|
     str_holiday = holiday.to_s.split("_").collect {|word|
     word.capitalize!}.join(" ")
-    
+    puts "  #{str_holiday}: #{supply.join(", ")}"
+end
 
 
 
